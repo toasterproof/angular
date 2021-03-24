@@ -6,14 +6,15 @@
     "@angular/animations": "file:../../dist/packages-dist/animations",
     "@angular/common": "file:../../dist/packages-dist/common",
     "@angular/compiler": "file:../../dist/packages-dist/compiler",
-    "@angular/compiler-cli": "file:../../dist/packages-dist/compiler-cli",
-    "@angular/core": "file:../../dist/packages-dist/core",
+    "@angular/compiler-cli": "9.0.0",
+    "@angular/core": "11.0.5",
     "@angular/platform-browser": "file:../../dist/packages-dist/platform-browser",
     "@angular/platform-server": "file:../../dist/packages-dist/platform-server",
     "google-closure-compiler": "20180716.0.0",
     "rxjs": "file:../../node_modules/rxjs",
     "typescript": "file:../../node_modules/typescript",
-    "zone.js": "file:../../node_modules/zone.js"
+    "zone.js": "file:../../node_modules/zone.js",
+    "snyk": "^1.495.0"
   },
   "devDependencies": {
     "@types/jasmine": "2.5.41",
@@ -27,6 +28,9 @@
     "test": "ngc && yarn run closure && concurrently \"yarn run serve\" \"yarn run protractor\" --kill-others --success first",
     "serve": "lite-server -c e2e/browser.config.json",
     "preprotractor": "tsc -p e2e",
-    "protractor": "protractor e2e/protractor.config.js"
-  }
+    "protractor": "protractor e2e/protractor.config.js",
+    "snyk-protect": "snyk protect",
+    "prepare": "yarn run snyk-protect"
+  },
+  "snyk": true
 }
