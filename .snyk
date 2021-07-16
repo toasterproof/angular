@@ -1,0 +1,37 @@
+# Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
+version: v1.21.5
+ignore: {}
+# patches apply the minimum changes required to fix a vulnerability
+patch:
+  'npm:hoek:20180212':
+    - '@bazel/karma > karma > log4js > loggly > request > hawk > hoek':
+        patched: '2021-07-16T13:40:14.362Z'
+    - '@bazel/karma > karma > log4js > loggly > request > hawk > boom > hoek':
+        patched: '2021-07-16T13:40:14.362Z'
+    - '@bazel/karma > karma > log4js > loggly > request > hawk > sntp > hoek':
+        patched: '2021-07-16T13:40:14.362Z'
+    - '@bazel/karma > karma > log4js > loggly > request > hawk > cryptiles > boom > hoek':
+        patched: '2021-07-16T13:40:14.362Z'
+  SNYK-JS-LODASH-567746:
+    - karma > combine-lists > lodash:
+        patched: '2021-07-16T13:40:14.362Z'
+    - '@bazel/karma > karma-sauce-launcher > sauce-connect-launcher > lodash':
+        patched: '2021-07-16T13:40:14.362Z'
+    - '@bazel/karma > karma-sauce-launcher > wd > lodash':
+        patched: '2021-07-16T13:40:14.362Z'
+    - '@bazel/karma > karma-sauce-launcher > wd > archiver > lodash':
+        patched: '2021-07-16T13:40:14.362Z'
+    - '@bazel/karma > karma-sauce-launcher > wd > async > lodash':
+        patched: '2021-07-16T13:40:14.362Z'
+    - '@bazel/karma > karma-sauce-launcher > wd > archiver > archiver-utils > lodash':
+        patched: '2021-07-16T13:40:14.362Z'
+    - '@bazel/karma > karma-sauce-launcher > wd > archiver > zip-stream > lodash':
+        patched: '2021-07-16T13:40:14.362Z'
+    - '@bazel/karma > karma-sauce-launcher > wd > archiver > zip-stream > archiver-utils > lodash':
+        patched: '2021-07-16T13:40:14.362Z'
+    - karma > lodash:
+        patched: '2021-07-16T13:40:14.362Z'
+    - '@bazel/karma > karma-sauce-launcher > sauce-connect-launcher > async > lodash':
+        patched: '2021-07-16T13:40:14.362Z'
+    - '@bazel/karma > karma-sauce-launcher > wd > archiver > async > lodash':
+        patched: '2021-07-16T13:40:14.362Z'
