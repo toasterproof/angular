@@ -1,0 +1,56 @@
+# Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
+version: v1.21.5
+ignore: {}
+# patches apply the minimum changes required to fix a vulnerability
+patch:
+  'npm:extend:20180424':
+    - karma > dom-serialize > extend:
+        patched: '2021-07-16T13:49:15.051Z'
+    - protractor > webdriver-manager > request > extend:
+        patched: '2021-07-16T13:49:15.051Z'
+    - '@bazel/karma > karma-sauce-launcher > wd > request > extend':
+        patched: '2021-07-16T13:49:15.051Z'
+  'npm:hoek:20180212':
+    - '@bazel/karma > karma > log4js > loggly > request > hawk > hoek':
+        patched: '2021-07-16T13:49:15.051Z'
+    - '@bazel/karma > karma > log4js > loggly > request > hawk > boom > hoek':
+        patched: '2021-07-16T13:49:15.051Z'
+    - '@bazel/karma > karma > log4js > loggly > request > hawk > sntp > hoek':
+        patched: '2021-07-16T13:49:15.051Z'
+    - '@bazel/karma > karma > log4js > loggly > request > hawk > cryptiles > boom > hoek':
+        patched: '2021-07-16T13:49:15.051Z'
+  SNYK-JS-HTTPSPROXYAGENT-469131:
+    - protractor > saucelabs > https-proxy-agent:
+        patched: '2021-07-16T13:49:15.051Z'
+    - protractor > browserstack > https-proxy-agent:
+        patched: '2021-07-16T13:49:15.051Z'
+    - '@bazel/karma > karma-sauce-launcher > sauce-connect-launcher > https-proxy-agent':
+        patched: '2021-07-16T13:49:15.051Z'
+    - '@bazel/karma > karma-sauce-launcher > saucelabs > https-proxy-agent':
+        patched: '2021-07-16T13:49:15.051Z'
+  SNYK-JS-LODASH-567746:
+    - karma > combine-lists > lodash:
+        patched: '2021-07-16T13:49:15.051Z'
+    - '@bazel/karma > karma-sauce-launcher > sauce-connect-launcher > lodash':
+        patched: '2021-07-16T13:49:15.051Z'
+    - '@bazel/karma > karma-sauce-launcher > wd > lodash':
+        patched: '2021-07-16T13:49:15.051Z'
+    - '@bazel/karma > karma-sauce-launcher > wd > archiver > lodash':
+        patched: '2021-07-16T13:49:15.051Z'
+    - '@bazel/karma > karma-sauce-launcher > wd > async > lodash':
+        patched: '2021-07-16T13:49:15.051Z'
+    - '@bazel/karma > karma-sauce-launcher > wd > archiver > archiver-utils > lodash':
+        patched: '2021-07-16T13:49:15.051Z'
+    - '@bazel/karma > karma-sauce-launcher > wd > archiver > zip-stream > lodash':
+        patched: '2021-07-16T13:49:15.051Z'
+    - '@bazel/karma > karma-sauce-launcher > wd > archiver > zip-stream > archiver-utils > lodash':
+        patched: '2021-07-16T13:49:15.051Z'
+    - karma > lodash:
+        patched: '2021-07-16T13:49:15.051Z'
+    - '@bazel/karma > karma-sauce-launcher > sauce-connect-launcher > async > lodash':
+        patched: '2021-07-16T13:49:15.051Z'
+    - '@bazel/karma > karma-sauce-launcher > wd > archiver > async > lodash':
+        patched: '2021-07-16T13:49:15.051Z'
+  'npm:tunnel-agent:20170305':
+    - '@bazel/karma > karma > log4js > loggly > request > tunnel-agent':
+        patched: '2021-07-16T13:49:15.051Z'
